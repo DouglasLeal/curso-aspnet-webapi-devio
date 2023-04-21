@@ -1,8 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using ApiBasica.Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.OpenApi;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace ApiBasica.Model
 {
-    public class FornecedorViewModel
+    public class Fornecedor
     {
         [Key]
         public Guid Id { get; set; }
